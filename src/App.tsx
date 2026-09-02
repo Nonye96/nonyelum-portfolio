@@ -1,3 +1,4 @@
+import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -8,8 +9,9 @@ import Process from './components/Process'
 import FAQ from './components/FAQ'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import HealthCheck from './pages/HealthCheck'
 
-function App() {
+function Home() {
   return (
     <>
       <Header />
@@ -25,6 +27,15 @@ function App() {
       </main>
       <Footer />
     </>
+  )
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/health" element={<HealthCheck />} />
+    </Routes>
   )
 }
 
