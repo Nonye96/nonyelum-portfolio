@@ -9,6 +9,7 @@ import Process from './components/Process'
 import FAQ from './components/FAQ'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ChatWidget from './components/chat/ChatWidget'
 import HealthCheck from './pages/HealthCheck'
 
 function Home() {
@@ -26,6 +27,7 @@ function Home() {
         <Contact />
       </main>
       <Footer />
+      <ChatWidget />
     </>
   )
 }
